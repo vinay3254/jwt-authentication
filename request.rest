@@ -1,0 +1,29 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidmluYXkiLCJpYXQiOjE3Njk5NDkwNjYsImV4cCI6MTc2OTk0OTA4MX0.S4IIdSLRFx552-H2YC20UzkCSXw9LYvCna1HKPVZWvk"
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidmluYXkiLCJpYXQiOjE3Njk5NDkyMjF9.l951d6vu7N4vaz2CA4txgsKtx9vgJ_lG3aaGKMLoANQ"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidmluYXkiLCJpYXQiOjE3Njk5NDg2Mjh9.RgCpbDlLBRtl6VgQ6UdZPzG5y4FV67AZ_DH9uwf9x7Q"
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "vinay"
+}
